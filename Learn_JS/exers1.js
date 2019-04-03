@@ -1,21 +1,26 @@
-document.getElementById('check').onclick = function() {
-        let log = document.getElementById('login').value;
-        let pass = document.getElementById('password').value;
-        let result = document.getElementById('result');
-     	suma = (log == 'ivan' && pass1 == '334455') ? 'Вход разрешен' :
-            (log == 'alex' && pass == '777') ? 'Вход разрешен' : 
-            (log == 'petr' && pass == 'b5678') ? 'Вход разрешен' : 'Ошибка входа';
-     	result.innerHTML = (suma);
+var location1 = 3;
+var location1 = 4;
+var location1 = 5;
+var guess; // координаты выстрела
+var hits = 0;
+var guesses = 0;
+var isSunk = false; // станет true когда кораблю потонет
+while (isSunk == false); {
+guess = prompt("Введите точку выстрела (1-6)");
+if (guess < 0 || guess > 6  ) {
+	alert ('Выберите правильный номер');
+} else {
+	guesses = guesses + 1;
+	if (guess == location1 || guess == location2 || guess == location3) {
+	hits = hits + 1;
 
+		if (hits == 3) {
+			isSunk = true;
+	alert("Ты потопил корабль")
+			 }
+		}
+	}
 }
-
-
-
-
-
-// result.innerHTML = (check);
-
-
-
-
-  
+var stats = "You took " + guesses + " guesses to sink the battleship, " +
+				"which means your shooting accuracy was " + (3/guesses);
+alert(stats);
