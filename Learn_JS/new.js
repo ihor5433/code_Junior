@@ -1,14 +1,25 @@
 function result() {
-    var a, b, p;
+    var a, b, c;
     c = document.getElementById('out');
     a = document.getElementById('num1').value;
-    a = parsentInt(a);
+    a = parseInt(a);
     b = document.getElementById('num2').value;
     b = parseInt(b);
-    if (a > b) {
-        p.innerHTML = 'Первое число больше второго';
+    suma = (a>b) ? 'Первое число больше второго' :
+    (a < b) ? 'Первое число меньше второго' : 'Числа одинаковые';
+    c.innerHTML = (suma);
+   }
+
+
+
+
+  /* if (a > b) {
+        c.innerHTML = 'Первое число больше второго';
 
     } else if (a < b) {
 
-        p.innerHTML = 'Первое число меньше второго';
+        c.innerHTML = 'Первое число меньше второго';
+    }  else {
+    	c.innerHTML = 'Числа одинаковые';
     }
+   }*/
