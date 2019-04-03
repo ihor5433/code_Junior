@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="exers1.js" defer></script>
+	</head>
+	<body>
+		<p>Введите номер квартиры <input type="text" id="num1"></p>
+		<button onclick="calc()">Найти</button>
+		<p id="out"><p>
+			<!-- <script>
+				function calc() {
+			var a, b;
+			b = document.getElementById('out')
+			a = document.getElementById('num1').value;
+			a = parseInt(a);
+			if (a > 0 && a < 21) {
+			b.innerHTML = ('Квартира находиться в первом подъезде');
+			} else if (a > 20 && a < 49) {
+			b.innerHTML = ('Квартира находиться во втором подъезде');
+			} else if (a > 48 && a < 91) {
+			b.innerHTML = ('Квартира находиться в третьем подъезде');
+			} else {
+			b.innerHTML = ('Номера такой квартиры нету');
+			}
+			}
+			</script> -->
+			<!-- <script>
+				function calc() {
+			var a, b;
+			b = document.getElementById('out')
+			a = document.getElementById('num1').value;
+			a = parseInt(a);
+			flat = (a>0 && a<20) ? "Квартира находиться в первом подъезде" :
+			(a>20 && a<48) ? "Квартира находиться во втором подъезде" :
+			(a>48) ? "Квартира находиться в третьем подъезде" : "Номера такой квартиры нету";
+			b.innerHTML = (flat);
+			}
+			</script> -->
+		</body>
+	</html>
