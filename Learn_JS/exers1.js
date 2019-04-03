@@ -1,40 +1,21 @@
-/*var a = prompt('Введите номер квартиры')
-if (a > 0 && a < 21) {
-    alert('Квартира находиться в первом подъезде');
-} else if (a > 20 && a < 49) {
-    alert('Квартира находиться во втором подъезде');
-} else if (a > 48 && a < 91) {
-    alert('Квартира находиться в третьем подъезде');
-} else {
-    alert('Номера такой квартиры нету');
-}*/
+document.getElementById('check').onclick = function() {
+        let log = document.getElementById('login').value;
+        let pass = document.getElementById('password').value;
+        let result = document.getElementById('result');
+     	suma = (log == 'ivan' && pass1 == '334455') ? 'Вход разрешен' :
+            (log == 'alex' && pass == '777') ? 'Вход разрешен' : 
+            (log == 'petr' && pass == 'b5678') ? 'Вход разрешен' : 'Ошибка входа';
+     	result.innerHTML = (suma);
 
-
-
-
-/*document.getElementById("calc").onclick = function(){
-    let flat = document.getElementById('flat').value;
-    flat= parseInt(flat);
-    if 
 }
-*/
 
-/*var a = prompt('Введите номер квартиры');*/
 
-/*var func = (numb>0 || numb<20) ? "Квартира находиться в первом подъезде" :
-(numb>20 || numb<48) ? "Квартира находиться во втором подъезде" :
-(numb>48) ? "Квартира находиться в третьем подъезде" : "Номера такой квартиры нету";
-alert(func);*/
-/*В первом подъезде квартиры с 1 по 20. Во втором с 21 по 48. В третьем с 49 по 90. 
-Пользователь вводит номер квартиры. Программа должна указать в каком подъезде находится данная квартира.*/
 
-function calc() {
-	var a, b;
-	b = document.getElementById('out')
-	a = document.getElementById('num1').value;
-	a = parseInt(a);
-	flat = (a>0 && a<20) ? "Квартира находиться в первом подъезде" :
-(a>20 && a<48) ? "Квартира находиться во втором подъезде" :
-(a>48) ? "Квартира находиться в третьем подъезде" : "Номера такой квартиры нету";
-b.innerHTML = (flat);
-}
+
+
+// result.innerHTML = (check);
+
+
+
+
+  
